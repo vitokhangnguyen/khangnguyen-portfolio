@@ -1,32 +1,54 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div id="app" :class="[background.isUsingImage() ? 'image-background' : '']">
+    <Navbar />
+    <router-view />
   </div>
 </template>
 
+<script>
+import Navbar from '@/components/Navbar.vue';
+import background from '@/states/background';
+
+export default {
+  name: 'home',
+  data() {
+    return {
+      background,
+    };
+  },
+  components: {
+    Navbar,
+  },
+};
+</script>
+
 <style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+
+html, body {
+  height: 100vh;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: white !important;
+  height: 100%;
 }
 
-#nav {
-  padding: 30px;
+body {
+  background-color: rgb(4, 4, 51) !important;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.image-background {
+  background-image:  linear-gradient(rgba(4,4,41,0.7), rgba(4,4,41,0.7)),
+    url("../src/assets/homepage-background.png");
+  background-size: cover;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+/* .image-background > .color-overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  background: rgb(4, 4, 51, 0.75);
+} */
 </style>
