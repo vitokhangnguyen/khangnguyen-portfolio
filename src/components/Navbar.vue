@@ -42,6 +42,7 @@ export default {
 .nav-link {
   text-align: center;
   font-size: 18px;
+  color: white !important;
 }
 
 .navbar-brand {
@@ -53,7 +54,7 @@ export default {
 }
 
 .router-link-exact-active {
-  color: #b182c9 !important;
+  color: #ba66e4 !important;
   text-decoration: underline !important;
 }
 </style>

@@ -16,6 +16,11 @@
             <font-awesome-icon icon="arrow-right" class="fa-sm right-arrow"></font-awesome-icon>
           </button>
         </router-link>
+        <router-link class="main-btn" to="/bth645">
+          <button class="main-btn">My BTH 645
+            <font-awesome-icon icon="arrow-right" class="fa-sm right-arrow"></font-awesome-icon>
+          </button>
+        </router-link>
       </div>
       <div class="intro-image">
         <img
@@ -55,7 +60,6 @@ export default {
   justify-content: space-around;
   align-items: center;
   padding: 1em 2em;
-  font-family: 'Open Sans', sans-serif;
   height: 80vh;
   /* border-top: 1px rgb(255, 255, 255, 0.25) solid; */
 }

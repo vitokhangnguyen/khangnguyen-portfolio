@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import App from './App.vue';
@@ -8,7 +8,7 @@ import router from './router';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-library.add(faArrowRight, faGithub, faLinkedinIn);
+library.add(faArrowRight, faChevronRight, faChevronLeft, faGithub, faLinkedinIn);
 dom.watch();
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

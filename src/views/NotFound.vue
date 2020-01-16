@@ -1,3 +1,6 @@
 <template>
-  <h1>404! The page you are looking for is not found.</h1>
+<div class="wrapper">
+  <h1>404!</h1>
+  <p>The page you are looking for can't be found.</p>
+</div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="[background.isUsingImage() ? 'image-background' : '']">
-    <Navbar />
+    <navbar />
     <router-view />
   </div>
 </template>
@@ -30,25 +30,21 @@ html, body {
   height: 100vh;
 }
 
+body {
+  background-color: rgb(4, 4, 51) !important;
+}
+</style>
+
+<style scoped>
 #app {
+  font-family: 'Open Sans', sans-serif;
   color: white !important;
   height: 100%;
 }
 
-body {
-  background-color: rgb(4, 4, 51) !important;
-}
-
 .image-background {
   background-image:  linear-gradient(rgba(4,4,41,0.7), rgba(4,4,41,0.7)),
-    url("../src/assets/homepage-background.png");
+    url("assets/homepage-background.png");
   background-size: cover;
 }
-
-/* .image-background > .color-overlay {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  background: rgb(4, 4, 51, 0.75);
-} */
 </style>
