@@ -15,9 +15,6 @@
           <router-link class="nav-link" to="/">Home</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/portfolio">Portfolio</router-link>
-        </li>
-        <li class="nav-item">
           <router-link class="nav-link" to="/bth645">BTH 645</router-link>
         </li>
       </ul>
