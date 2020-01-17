@@ -27,15 +27,23 @@ export default {
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 
 html, body {
-  height: 100vh;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+  }
 }
 
 body {
-  background-color: rgb(4, 4, 51) !important;
+  /* background-color: rgb(4, 4, 51) !important; */
+  background-color: rgb(18, 19, 76) !important;
 }
 </style>
 
 <style scoped>
+
 #app {
   font-family: 'Open Sans', sans-serif;
   color: white !important;
@@ -43,8 +51,8 @@ body {
 }
 
 .image-background {
-  background-image:  linear-gradient(rgba(4,4,41,0.7), rgba(4,4,41,0.7)),
-    url("assets/homepage-background.png");
+  background-image: linear-gradient(rgba(4,4,41,0.5), rgba(4,4,41,0.5)),
+    url("assets/homepage-background.jpg");
   background-size: cover;
 }
 </style>

@@ -1,12 +1,10 @@
 <template>
-  <div class="lab1-wrapper">
-    Lab 1
-  </div>
+  <h1>Not ready</h1>
 </template>
 
 <script>
 export default {
-  name: 'bth645Lab1',
+  name: 'bth645NotFound',
   components: {},
 };
 </script>

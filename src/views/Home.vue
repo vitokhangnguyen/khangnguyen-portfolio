@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="home-wrapper">
       <div class="intro-text">
         <h1 class="intro-text-1">Hi! I am <span class="my-name">Khang Nguyen</span></h1>
         <h2 class="intro-text-2">I am a Software Development student<br>in Toronto, Canada.</h2>
@@ -49,13 +49,13 @@ export default {
 
 <style scoped>
 
-.wrapper {
+.home-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   padding: 1em 2em;
-  height: 80vh;
+  height: 80%;
   /* border-top: 1px rgb(255, 255, 255, 0.25) solid; */
 }
 

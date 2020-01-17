@@ -1,5 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-sm navbar-dark">
+  <nav :class="['navbar', 'navbar-expand-sm', 'navbar-dark',
+                $route.name !== 'home' ? 'bordered-bottom' : 'transparent']">
     <div class="navbar-brand">KHANG NGUYEN</div>
     <button
       class="navbar-toggler"
@@ -31,9 +32,17 @@ export default {
 
 <style scoped>
 .navbar {
-    background-color: rgb(0, 0, 0, 0);
+    background-color: rgb(4, 4, 51);
     padding: 0.4em 1em;
     font-family: Montserrat;
+}
+
+.bordered-bottom {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.transparent {
+  background-color: rgb(0, 0, 0, 0);
 }
 
 .nav-link {
@@ -43,6 +52,7 @@ export default {
 }
 
 .navbar-brand {
+  margin-right: 0;
   letter-spacing: 5px;
   font-weight: bold;
   font-size: 22px;

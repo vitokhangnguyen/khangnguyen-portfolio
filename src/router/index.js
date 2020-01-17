@@ -4,6 +4,7 @@ import Home from '@/views/Home.vue';
 import BTH645 from '@/views/BTH645.vue';
 import BTH645Intro from '@/views/BTH645/Bth645Intro.vue';
 import BTH645Lab1 from '@/views/BTH645/Bth645Lab1.vue';
+import BTH645NotFound from '@/views/BTH645/Bth645NotFound.vue';
 import NotFound from '@/views/NotFound.vue';
 
 Vue.use(VueRouter);
@@ -26,6 +27,10 @@ const routes = [
       {
         path: 'lab1',
         component: BTH645Lab1,
+      },
+      {
+        path: '*',
+        component: BTH645NotFound,
       },
     ],
   },

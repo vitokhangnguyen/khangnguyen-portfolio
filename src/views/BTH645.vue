@@ -1,8 +1,10 @@
 <template>
   <div class="wrapper">
     <bth645-sidebar />
-    <div class="content">
-      <router-view />
+    <div class="content-wrapper">
+      <div class="content">
+        <router-view />
+      </div>
     </div>
   </div>
 </template>
@@ -20,15 +22,21 @@ export default {
 
 <style scoped>
 .wrapper {
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
   display: flex;
   width: 100%;
+  /* background-color: rgb(18, 19, 76); */
+  /* background-color: rgba(32, 32, 102, 0.5); */
 }
 
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80vw;
-  background-color: rgba(15, 21, 104, 0.377);
+.content-wrapper {
+  width: 100%;
+  /* background-color: rgb(55, 10, 68); */
+  margin: 0 15%;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin: 0 0;
+  }
 }
 </style>

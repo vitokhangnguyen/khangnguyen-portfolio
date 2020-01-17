@@ -7,6 +7,16 @@
     </div>
 
     <ul class="list-unstyled components">
+      <button type="button" id="sidebarCollapse" class="btn sidebar-toggler" @click="toggleSidebar">
+        <!-- <template v-if="sidebarClasses.active"> -->
+          <font-awesome-icon icon="chevron-right"></font-awesome-icon>
+          <font-awesome-icon icon="chevron-right"></font-awesome-icon>
+        <!-- </template>
+        <template v-else>
+          <font-awesome-icon icon="chevron-left"></font-awesome-icon>
+          <font-awesome-icon icon="chevron-left"></font-awesome-icon>
+        </template> -->
+      </button>
       <li>
         <router-link to="/bth645" style="border-top: none;">Introduction</router-link>
       </li>
@@ -62,16 +72,6 @@
       </li>
     </ul>
   </nav>
-  <button type="button" id="sidebarCollapse" class="btn sidebar-toggler" @click="toggleSidebar">
-    <template v-if="sidebarClasses.active">
-      <font-awesome-icon icon="chevron-right"></font-awesome-icon>
-      <font-awesome-icon icon="chevron-right"></font-awesome-icon>
-    </template>
-    <template v-else>
-      <font-awesome-icon icon="chevron-left"></font-awesome-icon>
-      <font-awesome-icon icon="chevron-left"></font-awesome-icon>
-    </template>
-  </button>
 </div>
 </template>
 
@@ -98,35 +98,40 @@ export default {
 }
 
 .sidebar {
-  width: 200px;
+  width: 250px;
   min-height: calc(100vh - 3.6em );
-  background: #843ea7;
+  background-color: #843ea7;
   transition: all 0.3s;
+  box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
 }
 
 .sidebar-header {
+  height: 160px;
   padding: 20px;
-  background-image:  linear-gradient(rgba(107,32,145,0.5), rgba(107,32,145,0.5)),
+  background-image:  linear-gradient(rgba(107, 32, 145, 0.25), rgba(107, 32, 145, 0.25)),
     url("../assets/bth645-sidebar-background.jpg");
   background-size: cover;
   text-align: center;
 }
 
 .sidebar-header > h3 {
+  margin-top: 20px;
   font-weight: bolder;
 }
 
 .sidebar-header > p {
   margin-bottom: 0;
+  font-weight: 600;
 }
 
 .sidebar ul.components {
-    padding: 20px 0;
-    /* border-bottom: 1px solid #47748b; */
+  padding: 10px 0;
 }
 
 .sidebar.active {
-    margin-left: -200px;
+    margin-left: -250px;
+    margin-right: 0;
+    box-shadow: none;
 }
 
 a, a:hover, a:focus {
@@ -148,11 +153,26 @@ a[data-toggle="collapse"] {
 }
 
 @media (max-width: 768px) {
-    #sidebar {
+    .sidebar {
         margin-left: -200px;
+        width: 200px;
     }
-    #sidebar.active {
+
+    .sidebar.active {
         margin-left: 0;
+        margin-right: 15px;
+    }
+
+    .sidebar:not(.active) .sidebar-toggler {
+      transform: none !important;
+      background: linear-gradient(90deg,
+        rgba(167,21,21,1) 50%,
+        rgba(167,21,21,0.5) 50%) !important;
+    }
+
+    .sidebar-toggler {
+      margin-left: 175px !important;
+      transform: rotate(180deg);
     }
 }
 
@@ -200,12 +220,22 @@ ul ul a {
   background: #9c4ac5;
 }
 
+.sidebar:not(.active) .sidebar-toggler {
+  transform: rotate(180deg);
+}
+
 .sidebar-toggler {
-  color: rgb(180, 180, 180);
+  color: white;
+  background: rgba(167,21,21,1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: sticky;
+  margin-top: -45px;
+  margin-left: 225px;
 }
 
 .sidebar-toggler:hover {
-  font-size: 25px;
   color: white;
 }
 
