@@ -160,7 +160,7 @@ a[data-toggle="collapse"] {
 
     .sidebar.active {
         margin-left: 0;
-        margin-right: 15px;
+        /* margin-right: 15px; */
     }
 
     .sidebar:not(.active) .sidebar-toggler {
@@ -173,6 +173,9 @@ a[data-toggle="collapse"] {
     .sidebar-toggler {
       margin-left: 175px !important;
       transform: rotate(180deg);
+      background: linear-gradient(90deg,
+        rgba(167,21,21,0.5) 50%,
+        rgba(167,21,21,1) 50%) !important;
     }
 }
 
@@ -193,7 +196,7 @@ a[data-toggle="collapse"] {
 
 .sidebar ul li ul li a:hover {
   transform: scale(1.1);
-  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   border-radius: 0.1cm;
 }
 

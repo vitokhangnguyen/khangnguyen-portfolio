@@ -2,9 +2,7 @@
   <div class="wrapper">
     <bth645-sidebar />
     <div class="content-wrapper">
-      <div class="content">
         <router-view />
-      </div>
     </div>
   </div>
 </template>
@@ -30,8 +28,8 @@ export default {
 
 .content-wrapper {
   width: 100%;
-  /* background-color: rgb(55, 10, 68); */
   margin: 0 15%;
+  padding: 1em;
 }
 
 @media (max-width: 768px) {

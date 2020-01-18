@@ -20,7 +20,7 @@
       <div class="intro-image">
         <img
         class="avatar iamge-responsive"
-        src="@/assets/homepage-avartar.png"
+        src="@/assets/homepage-avatar.png"
         alt="homepage-avatar"
         />
       </div>
@@ -109,6 +109,7 @@ a.main-btn:hover {
 
 .avatar {
   width: 22em;
+  max-width: 100%;
   border-radius: 50%;
 }
 </style>

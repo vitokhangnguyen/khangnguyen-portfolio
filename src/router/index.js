@@ -17,11 +17,11 @@ const routes = [
   },
   {
     path: '/bth645',
-    name: 'bth645',
     component: BTH645,
     children: [
       {
         path: '',
+        name: 'bth645',
         component: BTH645Intro,
       },
       {

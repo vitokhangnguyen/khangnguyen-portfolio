@@ -32,13 +32,14 @@ export default {
 
 <style scoped>
 .navbar {
-    background-color: rgb(4, 4, 51);
-    padding: 0.4em 1em;
-    font-family: Montserrat;
+  background-color: rgb(4, 4, 51);
+  padding: 0.4em 1em;
+  font-family: Montserrat;
 }
 
 .bordered-bottom {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 .transparent {

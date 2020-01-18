@@ -2,11 +2,14 @@
   <div id="app" :class="[background.isUsingImage() ? 'image-background' : '']">
     <navbar />
     <router-view />
+    <my-footer></my-footer>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar.vue';
+import MyFooter from '@/components/Footer.vue';
+
 import background from '@/states/background';
 
 export default {
@@ -18,6 +21,7 @@ export default {
   },
   components: {
     Navbar,
+    MyFooter,
   },
 };
 </script>
@@ -28,17 +32,18 @@ export default {
 
 html, body {
   height: 100%;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   body {
     height: auto;
   }
 }
 
 body {
-  /* background-color: rgb(4, 4, 51) !important; */
-  background-color: rgb(18, 19, 76) !important;
+  /* background-color: rgb(18, 19, 76) !important; */
+  background-color: rgb(53, 32, 101) !important;
 }
 </style>
 
