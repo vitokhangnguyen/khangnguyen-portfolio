@@ -13,7 +13,10 @@
     <div class="collapse navbar-collapse" id="rightNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <router-link class="nav-link" to="/">Home</router-link>
+          <router-link class="nav-link" to="/home">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/web-usability">Web Usability</router-link>
         </li>
         <li class="nav-item">
           <router-link class="nav-link" to="/bth645">BTH 645</router-link>
@@ -46,10 +49,24 @@ export default {
   background-color: rgb(0, 0, 0, 0);
 }
 
+.nav-item {
+  margin-left: 3px;
+  margin-right: 3px;
+  transition: ease-in .3s;
+}
+
 .nav-link {
   text-align: center;
   font-size: 18px;
   color: white !important;
+}
+
+.nav-link:hover {
+  font-weight: bolder;
+}
+
+.nav-link.router-link-active:hover {
+  font-weight: normal;
 }
 
 .navbar-brand {
@@ -61,7 +78,7 @@ export default {
   flex: 1;
 }
 
-.router-link-exact-active {
+.router-link-active {
   color: #ba66e4 !important;
   text-decoration: underline !important;
 }

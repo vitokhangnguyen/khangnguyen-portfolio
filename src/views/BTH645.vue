@@ -22,8 +22,6 @@ export default {
 .wrapper {
   display: flex;
   width: 100%;
-  /* background-color: rgb(18, 19, 76); */
-  /* background-color: rgba(32, 32, 102, 0.5); */
 }
 
 .content-wrapper {
@@ -35,6 +33,22 @@ export default {
 @media (max-width: 768px) {
   .content-wrapper {
     margin: 0 0;
+    overflow-x: hidden;
   }
+}
+</style>
+
+<style>
+.content-wrapper h1 {
+  font-weight: bold;
+}
+
+.content-wrapper a {
+  color: rgba(255, 64, 169, 0.8);
+  font-weight: bold;
+}
+
+.content-wrapper a:hover {
+  color: rgb(255, 64, 169);
 }
 </style>

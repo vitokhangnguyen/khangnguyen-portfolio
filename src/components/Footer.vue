@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       hidden: false,
-      lastModifiedTimestamp: '17 Jan 2020, 11:34 PM',
+      lastModifiedTimestamp: '18 Jan 2020, 3:49 AM',
     };
   },
   methods: {
@@ -47,7 +47,7 @@ footer {
   bottom: 0;
   min-height: 100px;
   padding: 5px 20px;
-  margin: 0 320px;
+  margin: 0 20%;
   transition: all .3s;
 }
 
@@ -79,6 +79,11 @@ footer > .student-oath {
 footer > .copyright {
   font-size: 12px;
   display: block;
+}
+
+.copyright > a {
+  color: #ba66e4;
+  font-weight: bold;
 }
 
 .divider {

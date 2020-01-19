@@ -4,11 +4,11 @@ const state = {
     use: false,
   },
   useImageBackground() {
-    if (this.debug) console.log('useImageBackground triggered', !this.state.use);
+    // if (this.debug) console.log('useImageBackground triggered', !this.state.use);
     this.state.use = true;
   },
   unuseImageBackground() {
-    if (this.debug) console.log('unuseImageBackground triggered', !this.state.use);
+    // if (this.debug) console.log('unuseImageBackground triggered', !this.state.use);
     this.state.use = false;
   },
   isUsingImage() {

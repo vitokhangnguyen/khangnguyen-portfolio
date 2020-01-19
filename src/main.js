@@ -6,6 +6,9 @@ import {
   faChevronLeft,
   faTimesCircle,
   faHeart,
+  faLaptopCode,
+  faClipboardList,
+  faCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -14,8 +17,8 @@ import router from './router';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-library.add(faArrowRight, faChevronRight, faChevronLeft, faTimesCircle, faHeart,
-  faGithub, faLinkedinIn);
+library.add(faArrowRight, faChevronRight, faChevronLeft, faTimesCircle, faHeart, faClipboardList,
+  faLaptopCode, faCheck, faGithub, faLinkedinIn);
 dom.watch();
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

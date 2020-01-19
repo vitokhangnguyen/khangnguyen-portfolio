@@ -26,10 +26,16 @@
           data-toggle="collapse"
           aria-expanded="false"
           class="dropdown-toggle"
-        >Labs</a>
+        >
+          <font-awesome-icon icon="laptop-code" class="menu-icon"></font-awesome-icon>
+          Labs
+        </a>
         <ul class="collapse list-unstyled" id="labSubmenu">
           <li>
-            <router-link to="/bth645/lab1">Lab 1</router-link>
+            <router-link to="/bth645/lab1">
+              Lab 1
+              <font-awesome-icon icon="check" class="completed-icon"></font-awesome-icon>
+            </router-link>
           </li>
           <li>
             <router-link to="/bth645/lab2">Lab 2</router-link>
@@ -57,16 +63,19 @@
           data-toggle="collapse"
           aria-expanded="false"
           class="dropdown-toggle"
-        >Assignments</a>
+        >
+          <font-awesome-icon icon="clipboard-list" class="menu-icon"></font-awesome-icon>
+          Assignments
+        </a>
         <ul class="collapse list-unstyled" id="asgSubmenu">
           <li>
-            <router-link to="/portfolio/asg1">Assignment 1</router-link>
+            <router-link to="/bth645/asg1">Assignment 1</router-link>
           </li>
           <li>
-            <router-link to="/portfolio/asg2">Assignment 2</router-link>
+            <router-link to="/bth645/asg2">Assignment 2</router-link>
           </li>
           <li>
-            <router-link to="/portfolio/asg3">Assignment 3</router-link>
+            <router-link to="/bth645/asg3">Assignment 3</router-link>
           </li>
         </ul>
       </li>
@@ -102,7 +111,7 @@ export default {
   min-height: calc(100vh - 3.6em );
   background-color: #843ea7;
   transition: all 0.3s;
-  box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 .sidebar-header {
@@ -115,7 +124,7 @@ export default {
 }
 
 .sidebar-header > h3 {
-  margin-top: 20px;
+  margin-top: 12px;
   font-weight: bolder;
 }
 
@@ -244,5 +253,18 @@ ul ul a {
 
 .sidebar-toggler:focus {
   box-shadow: none;
+}
+
+.menu-icon {
+  margin-right: 5px;
+  font-size: 30px;
+  vertical-align: -5px;
+}
+
+.completed-icon {
+  margin-left: 8px;
+  color: #13e244;
+  font-size: 20px;
+  vertical-align: -4px;
 }
 </style>
