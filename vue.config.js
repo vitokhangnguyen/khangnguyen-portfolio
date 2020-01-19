@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '.',
+  publicPath: '/~bth645_201a18/',
 };
