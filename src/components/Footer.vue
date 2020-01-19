@@ -2,7 +2,7 @@
 <div>
   <footer :class="[hidden ? 'disappear' : '']">
     <font-awesome-icon
-    @click="toggleFooter(false)"
+    @click="setFooterVisibility(false)"
     icon="times-circle"
     class="close-btn"></font-awesome-icon>
     <p class="last-modified">This site was last modified on {{ lastModifiedTimestamp }}.</p>
@@ -16,7 +16,7 @@
     </span>
   </footer>
   <font-awesome-icon
-  @click="toggleFooter(true)"
+  @click="toggleFooter"
   icon="heart"
   class="open-btn"></font-awesome-icon>
 </div>
@@ -29,12 +29,15 @@ export default {
   data() {
     return {
       hidden: false,
-      lastModifiedTimestamp: '18 Jan 2020, 3:49 AM',
+      lastModifiedTimestamp: '19 Jan 2020, 7:31 PM',
     };
   },
   methods: {
-    toggleFooter(status) {
+    setFooterVisibility(status) {
       this.hidden = !status;
+    },
+    toggleFooter() {
+      this.hidden = !this.hidden;
     },
   },
 };
@@ -82,7 +85,7 @@ footer > .copyright {
 }
 
 .copyright > a {
-  color: #ba66e4;
+  color: #ab5ed1;
   font-weight: bold;
 }
 
@@ -105,13 +108,13 @@ footer > .copyright {
   right: 20px;
   bottom: 15px;
   font-size: 50px;
-  color: rgb(167, 64, 199, 0.6);
+  color: #ab5ed177;
   transition: all .3s;
 }
 
 .open-btn:hover {
   transform: scale(1.25);
-  color: rgb(167, 64, 199, 1);
+  color: #ab5ed1;
   cursor: pointer;
 }
 </style>

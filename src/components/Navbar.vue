@@ -7,18 +7,21 @@
       type="button"
       data-toggle="collapse"
       data-target="#rightNavbar"
+      ref="navbartoggler"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="rightNavbar">
       <ul class="navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item" @click="closeNavbar">
           <router-link class="nav-link" to="/home">Home</router-link>
         </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/web-usability">Web Usability</router-link>
+        <li class="nav-item"  @click="closeNavbar">
+          <router-link class="nav-link" to="/web-usability">
+            Web Usability
+          </router-link>
         </li>
-        <li class="nav-item">
+        <li class="nav-item"  @click="closeNavbar">
           <router-link class="nav-link" to="/bth645">BTH 645</router-link>
         </li>
       </ul>
@@ -30,12 +33,17 @@
 export default {
   name: 'navbar',
   components: {},
+  methods: {
+    closeNavbar() {
+      this.$refs.navbartoggler.click();
+    },
+  },
 };
 </script>
 
 <style scoped>
 .navbar {
-  background-color: rgb(4, 4, 51);
+  background-color: rgb(0, 1, 45);
   padding: 0.4em 1em;
   font-family: Montserrat;
 }
@@ -79,7 +87,7 @@ export default {
 }
 
 .router-link-active {
-  color: #ba66e4 !important;
+  color: #b67dd3 !important;
   text-decoration: underline !important;
 }
 </style>

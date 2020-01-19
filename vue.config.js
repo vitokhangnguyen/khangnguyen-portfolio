@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/~bth645_201a18/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/~bth645_201a18/' : '/',
 };

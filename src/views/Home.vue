@@ -93,8 +93,8 @@ a.main-btn:hover {
 
 .main-btn:hover {
   font-weight: bold;
-  background-color: #843ea7;
-  border-color: #843ea7;
+  background-color: #5e3e7e;
+  border-color: #5e3e7e;
 }
 
 .main-btn:hover > .hidden {

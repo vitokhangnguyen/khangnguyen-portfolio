@@ -109,7 +109,7 @@ export default {
 .sidebar {
   width: 250px;
   min-height: calc(100vh - 3.6em );
-  background-color: #843ea7;
+  background-color: #5e3e7e;
   transition: all 0.3s;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
@@ -117,7 +117,7 @@ export default {
 .sidebar-header {
   height: 160px;
   padding: 20px;
-  background-image:  linear-gradient(rgba(107, 32, 145, 0.25), rgba(107, 32, 145, 0.25)),
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/bth645-sidebar-background.jpg");
   background-size: cover;
   text-align: center;
@@ -126,11 +126,13 @@ export default {
 .sidebar-header > h3 {
   margin-top: 12px;
   font-weight: bolder;
+  text-shadow: 6px 3px 3px #000000;
 }
 
 .sidebar-header > p {
   margin-bottom: 0;
   font-weight: 600;
+  text-shadow: 6px 3px 3px #000000;
 }
 
 .sidebar ul.components {
@@ -216,20 +218,20 @@ a[data-toggle="collapse"] {
 }
 
 .sidebar ul li .router-link-exact-active {
-    color: #9c4ac5;
+    color: #633f85;
     font-weight: bold;
     background: #fff;
 }
 
 .sidebar ul li.active > a, a[aria-expanded="true"] {
   color: white;
-  background: #9c4ac5;
+  background: #8059a5;
 }
 
 ul ul a {
   font-size: 1em !important;
   padding-left: 30px !important;
-  background: #9c4ac5;
+  background: #8059a5;
 }
 
 .sidebar:not(.active) .sidebar-toggler {

@@ -43,7 +43,7 @@ html, body {
 
 body {
   /* background-color: rgb(18, 19, 76) !important; */
-  background-color: rgb(53, 32, 101) !important;
+  background-color: rgb(14, 30, 80) !important;
 }
 </style>
 
@@ -56,7 +56,7 @@ body {
 }
 
 .image-background {
-  background-image: linear-gradient(rgba(4,4,41,0.5), rgba(4,4,41,0.5)),
+  background-image: linear-gradient(rgba(4, 4, 32, 0.75), rgba(4, 4, 32, 0.75)),
     url("assets/homepage-background.jpg");
   background-size: cover;
 }
