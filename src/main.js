@@ -9,6 +9,7 @@ import {
   faLaptopCode,
   faClipboardList,
   faCheck,
+  faArrowUp,
 } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -18,7 +19,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 library.add(faArrowRight, faChevronRight, faChevronLeft, faTimesCircle, faHeart, faClipboardList,
-  faLaptopCode, faCheck, faGithub, faLinkedinIn);
+  faLaptopCode, faCheck, faArrowUp, faGithub, faLinkedinIn);
 dom.watch();
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 

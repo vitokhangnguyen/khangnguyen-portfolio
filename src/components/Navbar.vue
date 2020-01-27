@@ -16,10 +16,8 @@
         <li class="nav-item" @click="closeNavbar">
           <router-link class="nav-link" to="/home">Home</router-link>
         </li>
-        <li class="nav-item"  @click="closeNavbar">
-          <router-link class="nav-link" to="/web-usability">
-            Web Usability
-          </router-link>
+        <li class="nav-item" @click="closeNavbar">
+          <router-link class="nav-link" to="/about">About Me!</router-link>
         </li>
         <li class="nav-item"  @click="closeNavbar">
           <router-link class="nav-link" to="/bth645">BTH 645</router-link>

@@ -1,5 +1,5 @@
 <template>
-  <div class="intro-pper">
+  <div class="intro-wrapper">
     <h1>Introduction</h1>
     <p>Welcome to my <strong>BTH 645</strong> portfolio!</p>
     <p>
@@ -25,17 +25,27 @@
       (including websites) or distributed to other students"
     </p>
     <p>
-      The oath can be found at any point by bringing up the footer using the purple heart
+      The oath can be found at any point by bringing up the homepage footer using the purple heart
       (<font-awesome-icon icon="heart" class="heart"></font-awesome-icon>)
-      on the bottom right on the screen.
+      on the bottom right of the homepage.
     </p>
+    <content-footer :timestamp="lastModified" />
   </div>
 </template>
 
 <script>
+import ContentFooter from '@/components/ContentFooter.vue';
+
 export default {
   name: 'bth645Intro',
-  components: {},
+  components: {
+    ContentFooter,
+  },
+  data() {
+    return {
+      lastModified: '19 Jan 2020, 7:31 PM',
+    };
+  },
 };
 </script>
 

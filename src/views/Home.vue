@@ -1,4 +1,5 @@
 <template>
+<div class="home-footer-wrapper">
   <div class="home-wrapper">
       <div class="intro-text">
         <h1 class="intro-text-1">Hi! I am <span class="my-name">Khang Nguyen</span></h1>
@@ -11,24 +12,28 @@
             <font-awesome-icon :icon="['fab', 'linkedin-in']"></font-awesome-icon>
           </a>
         </div>
-        <router-link class="main-btn" to="/bth645">
-          <button class="main-btn">My BTH 645
-            <font-awesome-icon icon="arrow-right" class="fa-sm right-arrow"></font-awesome-icon>
-          </button>
+        <button class="main-btn" @click="goToBth645">My BTH 645
+          <font-awesome-icon icon="arrow-right" class="fa-sm right-arrow"></font-awesome-icon>
+        </button>
+        <router-link class="last-submission-link" to="/bth645/lab2">
+          Last submission: Lab 2
         </router-link>
       </div>
       <div class="intro-image">
         <img
-        class="avatar iamge-responsive"
+        class="avatar"
         src="@/assets/homepage-avatar.png"
         alt="homepage-avatar"
         />
       </div>
   </div>
+  <homepage-footer></homepage-footer>
+</div>
 </template>
 
 <script>
 import background from '@/states/background';
+import HomepageFooter from '@/components/HomepageFooter.vue';
 
 export default {
   name: 'home',
@@ -37,17 +42,27 @@ export default {
       background,
     };
   },
+  methods: {
+    goToBth645() {
+      this.$router.push('bth645');
+    },
+  },
   created() {
     background.useImageBackground();
   },
   destroyed() {
     background.unuseImageBackground();
   },
-  components: {},
+  components: {
+    HomepageFooter,
+  },
 };
 </script>
 
 <style scoped>
+.home-footer-wrapper {
+  height: 80%;
+}
 
 .home-wrapper {
   display: flex;
@@ -55,7 +70,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   padding: 1em 2em;
-  height: 80%;
+  height: 100%;
   /* border-top: 1px rgb(255, 255, 255, 0.25) solid; */
 }
 
@@ -87,14 +102,14 @@ button.main-btn {
   margin-top: 1em;
 }
 
-a.main-btn:hover {
-  text-decoration: none;
-}
-
 .main-btn:hover {
   font-weight: bold;
   background-color: #5e3e7e;
   border-color: #5e3e7e;
+}
+
+.main-btn:focus {
+  outline: none;
 }
 
 .main-btn:hover > .hidden {
@@ -111,5 +126,16 @@ a.main-btn:hover {
   width: 22em;
   max-width: 100%;
   border-radius: 50%;
+}
+
+.last-submission-link {
+  color: #ab5ed1;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 1.5em;
+}
+
+.last-submission-link:hover {
+  color: rgb(214, 131, 255);
 }
 </style>

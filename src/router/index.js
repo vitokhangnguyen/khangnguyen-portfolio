@@ -1,11 +1,12 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '@/views/Home.vue';
-import WebUsability from '@/views/WebUsability.vue';
 import BTH645 from '@/views/BTH645.vue';
 import BTH645Intro from '@/views/BTH645/Bth645Intro.vue';
 import BTH645Lab1 from '@/views/BTH645/Bth645Lab1.vue';
+import BTH645Lab2 from '@/views/BTH645/Bth645Lab2.vue';
 import BTH645NotFound from '@/views/BTH645/Bth645NotFound.vue';
+import AboutMe from '@/views/AboutMe.vue';
 // import NotFound from '@/views/NotFound.vue';
 
 Vue.use(VueRouter);
@@ -19,11 +20,6 @@ const routes = [
     path: '/home',
     name: 'home',
     component: Home,
-  },
-  {
-    path: '/web-usability',
-    name: 'webUsability',
-    component: WebUsability,
   },
   {
     path: '/bth645',
@@ -40,11 +36,21 @@ const routes = [
         component: BTH645Lab1,
       },
       {
+        path: 'lab2',
+        name: 'bth645-lab2',
+        component: BTH645Lab2,
+      },
+      {
         path: '*',
         name: 'bth645-notfound',
         component: BTH645NotFound,
       },
     ],
+  },
+  {
+    path: '/about',
+    name: 'about-me',
+    component: AboutMe,
   },
   {
     path: '*',

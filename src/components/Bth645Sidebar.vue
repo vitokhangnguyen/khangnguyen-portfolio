@@ -38,7 +38,10 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/bth645/lab2">Lab 2</router-link>
+            <router-link to="/bth645/lab2">
+              Lab 2
+              <font-awesome-icon icon="check" class="completed-icon"></font-awesome-icon>
+            </router-link>
           </li>
           <li>
             <router-link to="/bth645/lab3">Lab 3</router-link>
@@ -202,7 +205,7 @@ a[data-toggle="collapse"] {
 }
 
 .sidebar > ul > li > a {
-  border-top: 1px #b38ac7 solid;
+  border-top: 1px #836492 solid;
 }
 
 .sidebar ul li ul li a:hover {
