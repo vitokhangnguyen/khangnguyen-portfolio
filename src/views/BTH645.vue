@@ -68,6 +68,7 @@ export default {
 
 .content-wrapper li {
   margin-top: 3px;
+  margin-bottom: 3px;
   margin-block: 3px;
 }
 
@@ -78,5 +79,25 @@ export default {
 
 .content-wrapper a:hover {
   color: rgb(255, 64, 169);
+}
+
+.content-wrapper figure img {
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.7);
+}
+
+.content-wrapper .row .col-md-12 figure {
+  padding: 0 10%
+}
+
+.content-wrapper figure figcaption {
+  text-align: center;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper .row .col-md-12 figure {
+    padding: 0 0;
+  }
 }
 </style>

@@ -15,8 +15,8 @@
         <button class="main-btn" @click="goToBth645">My BTH 645
           <font-awesome-icon icon="arrow-right" class="fa-sm right-arrow"></font-awesome-icon>
         </button>
-        <router-link class="last-submission-link" to="/bth645/lab2">
-          Last submission: Lab 2
+        <router-link class="last-submission-link" to="/bth645/lab3">
+          Last submission: Lab 3
         </router-link>
       </div>
       <div class="intro-image">
