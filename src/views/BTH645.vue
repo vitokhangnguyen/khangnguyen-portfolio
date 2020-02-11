@@ -95,6 +95,23 @@ export default {
   margin-top: 2px;
 }
 
+.content-wrapper .audio-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper .audio-wrapper audio {
+  width: 100%;
+  max-width: 450px;
+}
+
+.content-wrapper .audio-wrapper p {
+  font-style: italic;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .content-wrapper .row .col-md-12 figure {
     padding: 0 0;
