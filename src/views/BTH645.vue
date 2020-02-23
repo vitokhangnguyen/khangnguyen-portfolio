@@ -57,12 +57,30 @@ export default {
   margin-bottom: 15px;
 }
 
+.content-wrapper h3 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
 .content-wrapper p {
   margin-bottom: 10px;
 }
 
+.content-wrapper .quote-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em 2em;
+  margin: 12px 1em;
+  border-radius: 1cm;
+  box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.content-wrapper p.pre {
+    font-family: monospace;
+    font-size: 16px;
+}
+
 .content-wrapper ul, .content-wrapper ol {
-  margin: 0;
+  margin: 0 0 15px 0;
   padding-left: 2em;
 }
 
@@ -85,8 +103,9 @@ export default {
   box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.7);
 }
 
+.content-wrapper > div > figure,
 .content-wrapper .row .col-md-12 figure {
-  padding: 0 10%
+  padding: 0 10%;
 }
 
 .content-wrapper figure figcaption {
@@ -95,19 +114,19 @@ export default {
   margin-top: 2px;
 }
 
-.content-wrapper .audio-wrapper {
+.content-wrapper .media-wrapper {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
 
-.content-wrapper .audio-wrapper audio {
+.content-wrapper .media-wrapper audio {
   width: 100%;
   max-width: 450px;
 }
 
-.content-wrapper .audio-wrapper p {
+.content-wrapper .media-wrapper p {
   font-style: italic;
   text-align: center;
 }

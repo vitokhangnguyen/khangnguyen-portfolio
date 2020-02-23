@@ -15,8 +15,8 @@
         <button class="main-btn" @click="goToBth645">My BTH 645
           <font-awesome-icon icon="arrow-right" class="fa-sm right-arrow"></font-awesome-icon>
         </button>
-        <router-link class="last-submission-link" to="/bth645/lab4">
-          Last submission: Lab 4
+        <router-link class="last-submission-link" to="/bth645/asg1">
+          Last submission: Assignment 1
         </router-link>
       </div>
       <div class="intro-image">
@@ -132,7 +132,7 @@ button.main-btn {
   color: #ab5ed1;
   display: inline-block;
   margin-top: 5px;
-  margin-left: 1.5em;
+  margin-left: 0em;
 }
 
 .last-submission-link:hover {

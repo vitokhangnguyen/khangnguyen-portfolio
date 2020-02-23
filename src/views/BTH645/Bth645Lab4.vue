@@ -9,33 +9,33 @@
   <h2>Audios</h2>
   <div class="row">
     <div class="col-md-12">
-      <div class="audio-wrapper">
-        <audio class="audio-elem" controls>
+      <div class="media-wrapper">
+        <audio controls>
           <source src="@/assets/bth645/lab4/recorded.mp3" type="audio/mpeg" preload="auto" />
           You browser does not support audio
         </audio>
-        <p class="audio-caption">Self-recorded</p>
+        <p>Self-recorded</p>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6">
-      <div class="audio-wrapper">
-        <audio class="audio-elem" controls>
+      <div class="media-wrapper">
+        <audio controls>
           <source src="@/assets/bth645/lab4/original.mp3" type="audio/mpeg" preload="auto" />
           You browser does not support audio
         </audio>
-        <p class="audio-caption">Original (source: <a href="https://www.bensound.com">https://www.bensound.com</a>)</p>
+        <p>Original (source: <a href="https://www.bensound.com">https://www.bensound.com</a>)</p>
       </div>
     </div>
     <div class="col-md-6">
-      <div class="audio-wrapper">
-        <audio class="audio-elem" controls>
+      <div class="media-wrapper">
+        <audio controls>
           <source src="@/assets/bth645/lab4/modified.ogg" type="audio/ogg" preload="auto" />
           <source src="@/assets/bth645/lab4/modified.mp3" type="audio/mpeg" preload="auto" />
           You browser does not support audio
         </audio>
-        <p class="audio-caption">Modified</p>
+        <p>Modified</p>
       </div>
     </div>
   </div>

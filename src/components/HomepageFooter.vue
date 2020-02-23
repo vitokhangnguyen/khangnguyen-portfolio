@@ -29,7 +29,7 @@ export default {
   data() {
     return {
       hidden: false,
-      lastModifiedTimestamp: '10 Feb 2020, 11:54 PM',
+      lastModifiedTimestamp: '22 Feb 2020, 9:25 PM',
     };
   },
   methods: {

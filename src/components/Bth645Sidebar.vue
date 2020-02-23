@@ -78,7 +78,10 @@
         </a>
         <ul class="collapse list-unstyled" id="asgSubmenu">
           <li>
-            <router-link to="/bth645/asg1">Assignment 1</router-link>
+            <router-link to="/bth645/asg1">
+              Assignment 1
+              <font-awesome-icon icon="check" class="completed-icon"></font-awesome-icon>
+            </router-link>
           </li>
           <li>
             <router-link to="/bth645/asg2">Assignment 2</router-link>

@@ -17,15 +17,18 @@
       right beside it (You might need to expand to see it on mobile devices).
     </p>
     <p>
-      Finally, I declare that...
+      Finally...
     </p>
-    <p class="oath">
-      "This is wholly my own work in accordance with Seneca Academic Policy.
-      No part of this work has been copied manually or electronically from any other source
-      (including websites) or distributed to other students"
-    </p>
+    <div class="quote-box">
+      <p class="pre">
+        "I declare that this is wholly my own work in accordance with Seneca Academic Policy.
+        No part of this work has been copied manually or electronically from any other source
+        (including websites) or distributed to other students"
+      </p>
+      <span>Name: Khang Ngoc Nam Nguyen | Student ID: 116122177</span>
+    </div>
     <p>
-      The oath can be found at any point by bringing up the homepage footer using the purple heart
+      The oath can be found by bringing up the homepage footer using the purple heart
       (<font-awesome-icon icon="heart" class="heart"></font-awesome-icon>)
       on the bottom right of the homepage.
     </p>
@@ -50,11 +53,6 @@ export default {
 </script>
 
 <style scoped>
-.oath {
-  font-family: monospace;
-  font-size: 18px;
-}
-
 .heart {
   font-size: 20px;
   color: rgb(167, 64, 199, 0.6);
