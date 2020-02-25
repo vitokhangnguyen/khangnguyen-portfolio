@@ -35,7 +35,7 @@
     </div>
     <h2>Video</h2>
     <div class="media-wrapper">
-      <video width="640" height="360" controls>
+      <video controls>
         <source src="@/assets/bth645/asg1/video.mp4" type="video/mp4" preload="auto" />
         You browser does not support audio
       </video>
@@ -132,6 +132,6 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 
 </style>

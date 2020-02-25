@@ -126,14 +126,27 @@ export default {
   max-width: 450px;
 }
 
+.content-wrapper .media-wrapper video {
+  width: 640px;
+}
+
 .content-wrapper .media-wrapper p {
   font-style: italic;
   text-align: center;
 }
 
 @media (max-width: 768px) {
+  .content-wrapper > div > figure,
   .content-wrapper .row .col-md-12 figure {
     padding: 0 0;
+  }
+
+  .content-wrapper .media-wrapper video {
+    width: 100%;
+  }
+
+  .content-wrapper .quote-box {
+    margin: 0;
   }
 }
 </style>

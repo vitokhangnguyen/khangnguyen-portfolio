@@ -15,9 +15,11 @@
         <button class="main-btn" @click="goToBth645">My BTH 645
           <font-awesome-icon icon="arrow-right" class="fa-sm right-arrow"></font-awesome-icon>
         </button>
-        <router-link class="last-submission-link" to="/bth645/asg1">
-          Last submission: Assignment 1
-        </router-link>
+        <div class="last-submission">
+          Last submission:
+          <router-link class="last-submission-link" to="/bth645/lab5">Lab 5</router-link> |
+          <router-link class="last-submission-link" to="/bth645/asg1">A1</router-link>
+        </div>
       </div>
       <div class="intro-image">
         <img
@@ -97,6 +99,7 @@ button.main-btn {
   border: 2px solid white;
   color: white;
   height: 2.25em;
+  width: 10em;
   font-size: 25px;
   padding: 0em 1em;
   margin-top: 1em;
@@ -128,11 +131,15 @@ button.main-btn {
   border-radius: 50%;
 }
 
-.last-submission-link {
-  color: #ab5ed1;
-  display: inline-block;
+.last-submission {
+  text-align: center;
+  width: 15.5em;
   margin-top: 5px;
   margin-left: 0em;
+}
+
+.last-submission-link {
+  color: #ab5ed1;
 }
 
 .last-submission-link:hover {
