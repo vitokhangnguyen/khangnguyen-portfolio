@@ -8,6 +8,7 @@ import BTH645Lab2 from '@/views/BTH645/Bth645Lab2.vue';
 import BTH645Lab3 from '@/views/BTH645/Bth645Lab3.vue';
 import BTH645Lab4 from '@/views/BTH645/Bth645Lab4.vue';
 import BTH645Lab5 from '@/views/BTH645/Bth645Lab5.vue';
+import BTH645Lab6 from '@/views/BTH645/Bth645Lab6.vue';
 import BTH645Asg1 from '@/views/BTH645/Bth645Asg1.vue';
 import BTH645NotFound from '@/views/BTH645/Bth645NotFound.vue';
 import AboutMe from '@/views/AboutMe.vue';
@@ -58,6 +59,11 @@ const routes = [
         path: 'lab5',
         name: 'bth645-lab5',
         component: BTH645Lab5,
+      },
+      {
+        path: 'lab6',
+        name: 'bth645-lab6',
+        component: BTH645Lab6,
       },
       {
         path: 'asg1',

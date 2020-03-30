@@ -17,7 +17,7 @@
         </button>
         <div class="last-submission">
           Last submission:
-          <router-link class="last-submission-link" to="/bth645/lab5">Lab 5</router-link> |
+          <router-link class="last-submission-link" to="/bth645/lab6">Lab 6</router-link> |
           <router-link class="last-submission-link" to="/bth645/asg1">A1</router-link>
         </div>
       </div>

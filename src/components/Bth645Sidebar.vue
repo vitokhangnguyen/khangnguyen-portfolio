@@ -62,7 +62,10 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/bth645/lab6">Lab 6</router-link>
+            <router-link to="/bth645/lab6">
+              Lab 6
+              <font-awesome-icon icon="check" class="completed-icon"></font-awesome-icon>
+            </router-link>
           </li>
           <li>
             <router-link to="/bth645/lab7">Lab 7</router-link>
