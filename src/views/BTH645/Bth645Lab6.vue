@@ -11,7 +11,7 @@
   </div>
   <p style="margin-top: 15px;">
     <strong>* Note:</strong>
-    The sketch is drawn with p.js except for the houses which are actually embedded images.
+    The sketch is drawn with p5.js except for the houses which are actually embedded images.
   </p>
   <h2>p5.js Script</h2>
   <iframe

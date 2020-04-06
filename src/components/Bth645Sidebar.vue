@@ -67,9 +67,6 @@
               <font-awesome-icon icon="check" class="completed-icon"></font-awesome-icon>
             </router-link>
           </li>
-          <li>
-            <router-link to="/bth645/lab7">Lab 7</router-link>
-          </li>
         </ul>
       </li>
       <li>
@@ -90,7 +87,10 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/bth645/asg2">Assignment 2</router-link>
+            <router-link to="/bth645/asg2">
+              Assignment 2
+              <font-awesome-icon icon="check" class="completed-icon"></font-awesome-icon>
+            </router-link>
           </li>
           <li>
             <router-link to="/bth645/asg3">Assignment 3</router-link>
