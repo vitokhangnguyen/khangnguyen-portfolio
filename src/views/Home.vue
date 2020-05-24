@@ -18,7 +18,7 @@
         <div class="last-submission">
           Last submission:
           <router-link class="last-submission-link" to="/bth645/lab6">Lab 6</router-link> |
-          <router-link class="last-submission-link" to="/bth645/asg2">A2</router-link>
+          <router-link class="last-submission-link" to="/bth645/asg3">A3</router-link>
         </div>
       </div>
       <div class="intro-image">

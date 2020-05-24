@@ -93,7 +93,10 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/bth645/asg3">Assignment 3</router-link>
+            <router-link to="/bth645/asg3">
+              Assignment 3
+              <font-awesome-icon icon="check" class="completed-icon"></font-awesome-icon>
+            </router-link>
           </li>
         </ul>
       </li>

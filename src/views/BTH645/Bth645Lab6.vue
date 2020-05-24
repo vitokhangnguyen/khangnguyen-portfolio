@@ -15,7 +15,7 @@
   </p>
   <h2>p5.js Script</h2>
   <iframe
-    height="628" style="width: 100%;" scrolling="no" title="BTH645Lab6-p5Sketch"
+    height="650" style="width: 100%;" scrolling="no" title="BTH645Lab6-p5Sketch"
     src="https://codepen.io/vitokhangnguyen/embed/dyoaOLb?height=628&theme-id=dark&default-tab=js"
     frameborder="no" allowtransparency="true" allowfullscreen="true"
   >
@@ -29,7 +29,7 @@
 
 <script>
 import P5 from 'p5';
-import lab6SketchScript from '@/js/bth645/lab6-sketch';
+import lab6Sketch from '@/js/bth645/lab6-sketch';
 import ContentFooter from '@/components/ContentFooter.vue';
 
 export default {
@@ -43,7 +43,7 @@ export default {
   },
   mounted() {
     // eslint-disable-next-line no-new
-    new P5(lab6SketchScript, document.getElementById('p5Canvas'));
+    new P5(lab6Sketch, document.getElementById('p5Canvas'));
   },
 };
 </script>
